@@ -1,0 +1,32 @@
+# 转换产物
+dify_md/
+处理清单.csv
+*.log
+
+# 输入数据（含 Word 临时文件）——避免把待转换的敏感 docx 误提交
+*.docx
+~$*.docx
+
+# Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# PyInstaller 构建产物（可用 build.bat 重新生成）
+build/
+*.spec.bak
+
+# 打包后的 exe 与发布包（体积大，按需自行生成）
+dist/*.exe
+发布包/
+
+# 编辑器 / 操作系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
